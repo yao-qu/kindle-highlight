@@ -25,7 +25,8 @@ function Searched() {
 
     return (
         <Wraper>
-            {highlights.map((quote) => {
+            {highlights
+                .slice(0).reverse().map((quote) => {
                 return (
                     <div key={quote.id}>
                         <Card>
