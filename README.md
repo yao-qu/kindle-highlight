@@ -1,6 +1,6 @@
 Developed simple back-end and front-end to view Kindle Clippings. 
 
-https://reliable-pie-69c6dc.netlify.app/
+https://reliable-pie-69c6dc.netlify.app/    |   https://yaoqu.store/
 
 
 Backend:
