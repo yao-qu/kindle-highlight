@@ -20,12 +20,15 @@ function App() {
 const Logo = styled(Link)`
   text-decoration: none;
   font-size: 1.5rem;
+  color: #4f4f4f;
   font-weight: 400;
   font-family: 'Space Mono', monospace;
   color: black;
+  letter-spacing: 5px;
 `;
 const Nav = styled.div`
   padding: 4rem 0rem;
+  color: #4f4f4f;
   display: flex;
 svg {
   font-size: 3rem;
