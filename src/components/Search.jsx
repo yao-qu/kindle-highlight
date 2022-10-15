@@ -18,7 +18,7 @@ function Search() {
             <FormStyle onSubmit={submitHandler}>
                 <div>
                     <FaSearch></FaSearch>
-                    <input onChange={(e) => setInput(e.target.value)} type="text" value={input} /></div>
+                    <input onChange={(e) => setInput(e.target.value)} type="text" placeholder="Search author..." value={input} /></div>
             </FormStyle></Wraper>
     )
 }
@@ -40,8 +40,8 @@ const FormStyle = styled.form`
         border: none;
 
         background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-        font-size: 1.5rem;
-        color: white;
+        font-size: 1 rem;
+        color: #4f4f4f;
         width: 100%;
         padding: 1rem;
         border: none;
