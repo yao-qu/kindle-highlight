@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components';
+import { device } from '../pages/Devices';
 
 function Testing() {
     const [highlights, setHighlights] = useState([]);
@@ -44,14 +45,31 @@ function Testing() {
 
 
 const Wraper = styled.div`
+
+@media ${device.laptop} { 
     margin-left: 4rem;
-    margin-right: 3rem;`
+    margin-right: 3rem;
+  };
+
+  @media ${device.mobileL} { 
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+    `
 
 
 
 const Card = styled.div`
-    margin-left: 8rem;
+background-color: #FAF7F0;
+    @media ${device.laptop} { 
+        margin-left: 8rem;
     margin-right: 8rem;
+  };
+
+  @media ${device.mobileL} { 
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
     margin-bottom: 3rem;
     font-family: 'Roboto', sans-serif;
     p{
