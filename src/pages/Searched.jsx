@@ -60,8 +60,9 @@ const Wraper = styled.div`
 
 
 const Card = styled.div`
-    @media ${device.laptop} { 
-        margin-left: 8rem;
+    background-color: #FAF7F0;
+  @media ${device.laptop} { 
+    margin-left: 8rem;
     margin-right: 8rem;
   };
 
