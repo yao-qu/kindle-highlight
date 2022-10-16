@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
+import { device } from './Devices';
 // import { Link } from 'react-router-dom';
 
 
@@ -44,14 +45,34 @@ function Searched() {
 
 
 const Wraper = styled.div`
+
+@media ${device.laptop} { 
     margin-left: 4rem;
-    margin-right: 3rem;`
+    margin-right: 3rem;
+  };
+
+  @media ${device.mobileL} { 
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+    `
 
 
 
 const Card = styled.div`
-    margin-left: 8rem;
+    @media ${device.laptop} { 
+        margin-left: 8rem;
     margin-right: 8rem;
+  };
+
+  @media ${device.mobileL} { 
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+
+
+
     margin-bottom: 3rem;
     font-family: 'Roboto', sans-serif;
     p{
@@ -61,6 +82,7 @@ const Card = styled.div`
         text-align: center;
         font-size: 1rem;
     }
+
     p.author{
         text-align: center;
         text-decoration: underline #e3ffe7 5px;
@@ -80,8 +102,7 @@ const Quote = styled.div`
 blockquote {
   font-size: 1em;
   line-height: 1.5em;
-  
-}
+  }
 
 blockquote:before {
   content: open-quote;
