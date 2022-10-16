@@ -43,17 +43,20 @@ function Searched() {
     );
 }
 
-
 const Wraper = styled.div`
-
-@media ${device.laptop} { 
-    margin-left: 4rem;
-    margin-right: 3rem;
-  };
-
-  @media ${device.mobileL} { 
-    margin-left: 0rem;
-    margin-right: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+    display: box;
+    position: relative;
+    justify-content: center;
+    @media ${device.tablet} { 
+        ${'' /* max-width: 800px; */}
+        margin-left: 10rem;
+        align-items: center;
+        margin-right: 10rem;
+        justify-content: center;
+        
   }
     `
 
@@ -61,19 +64,6 @@ const Wraper = styled.div`
 
 const Card = styled.div`
     background-color: #FAF7F0;
-  @media ${device.laptop} { 
-    margin-left: 8rem;
-    margin-right: 8rem;
-  };
-
-  @media ${device.mobileL} { 
-    margin-left: 0rem;
-    margin-right: 0rem;
-  }
-
-
-
-
     margin-bottom: 3rem;
     font-family: 'Roboto', sans-serif;
     p{
@@ -83,7 +73,6 @@ const Card = styled.div`
         text-align: center;
         font-size: 1rem;
     }
-
     p.author{
         text-align: center;
         text-decoration: underline #e3ffe7 5px;
@@ -99,20 +88,17 @@ const Card = styled.div`
 
 
 const Quote = styled.div`
-
 blockquote {
   font-size: 1em;
   line-height: 1.5em;
-  }
-
+  
+}
 blockquote:before {
   content: open-quote;
 }
-
 blockquote:after {
   content: close-quote;
 }
-
 blockquote:after {
   display: inline-block;
   vertical-align: bottom;
@@ -121,9 +107,6 @@ blockquote:after {
   top: .2em;
   position: relative;
 }
-
-
-
 blockquote:before {
   display: inline-block;
   vertical-align: bottom;
