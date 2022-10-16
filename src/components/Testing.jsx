@@ -28,17 +28,17 @@ function Testing() {
         <Wraper>
             {highlights
                 .slice(0).reverse().map((quote) => {
-                return (
-                    <div key={quote.id}>
-                        <Card>
-                            <p className='author'>{quote.title} | {quote.author}</p>
-                            <Quote><blockquote>{quote.highlight}</blockquote></Quote>
-                            <p className='date'>{quote.added}</p>
-                        </Card>
+                    return (
+                        <div key={quote.id}>
+                            <Card>
+                                <p className='author'>{quote.title} | {quote.author}</p>
+                                <Quote><blockquote>{quote.highlight}</blockquote></Quote>
+                                <p className='date'>{quote.added}</p>
+                            </Card>
 
-                    </div>
-                );
-            })}
+                        </div>
+                    );
+                })}
         </Wraper>
     );
 }
@@ -46,30 +46,27 @@ function Testing() {
 
 const Wraper = styled.div`
 
-@media ${device.laptop} { 
-    margin-left: 4rem;
-    margin-right: 3rem;
-  };
-
-  @media ${device.mobileL} { 
-    margin-left: 0rem;
-    margin-right: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+    display: box;
+    position: relative;
+    justify-content: center;
+    @media ${device.tablet} { 
+        ${'' /* max-width: 800px; */}
+        margin-left: 10rem;
+        align-items: center;
+        margin-right: 10rem;
+        justify-content: center;
+        
   }
     `
 
 
 
 const Card = styled.div`
-background-color: #FAF7F0;
-    @media ${device.laptop} { 
-        margin-left: 8rem;
-    margin-right: 8rem;
-  };
+    background-color: #FAF7F0;
 
-  @media ${device.mobileL} { 
-    margin-left: 0rem;
-    margin-right: 0rem;
-  }
     margin-bottom: 3rem;
     font-family: 'Roboto', sans-serif;
     p{
