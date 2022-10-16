@@ -75,6 +75,7 @@ const Card = styled.div`
         font-size: 1rem;
     }
     p.author{
+        line-height: 2.5rem; 
         text-align: center;
         text-decoration: underline #e3ffe7 5px;
         letter-spacing: 5px;
