@@ -66,7 +66,7 @@ const Wraper = styled.div`
 
 const Card = styled.div`
     background-color: #FAF7F0;
-
+    border-radius: 25px;
     margin-bottom: 3rem;
     font-family: 'Roboto', sans-serif;
     p{
