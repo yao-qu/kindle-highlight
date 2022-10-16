@@ -25,20 +25,18 @@ function Search() {
 
 
 const Wraper = styled.div`
-    margin: 0rem 4rem;
     display: flex;
+    justify-content: center;
     align-items: center;`;
 
 
 const FormStyle = styled.form`
     
     position: relative;
-    margin: 0rem 5rem;
-    width: 100%;
+    margin: 0rem 2rem;
 
     input{
         border: none;
-
         background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
         font-size: 1 rem;
         color: #4f4f4f;
